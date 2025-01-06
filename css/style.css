@@ -1,0 +1,2075 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,600,700,800");
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0 0 15px;
+  color: #ced2dc;
+  letter-spacing: 0.5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 48px;
+  line-height: 50px;
+}
+h2 {
+  font-size: 38px;
+  line-height: 40px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 32px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 26px;
+}
+h5 {
+  font-size: 20px;
+  line-height: 22px;
+}
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+}
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0 none;
+}
+a:hover,
+a:focus {
+  color: #ecb522;
+  text-decoration: none;
+}
+body {
+  background: #fff none repeat scroll 0 0;
+  color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  overflow-x: hidden;
+  line-height: 26px;
+  font-weight: 400;
+  width: 100%;
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button,
+button[type="submit"] {
+  -moz-appearance: none;
+  box-shadow: none !important;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.header-one {
+  width: 100%;
+  height: 105px;
+  z-index: 1;
+  background-color: #c62627;
+  background-image: url("../img/indexImg/headerBG.webp");
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+.headerTop {
+  width: 100%;
+  height: 105px;
+}
+.navbar {
+  width: calc(50% - 150px);
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.ulBox {
+  width: 90%;
+  margin: auto;
+}
+.navbarShow {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.header-area {
+  background: #1c2429f2 none repeat scroll 0 0;
+}
+.pagess {
+  color: #ffdb64;
+  margin-right: 8px;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  cursor: pointer;
+  height: 25px;
+}
+.pagessRight {
+  white-space: nowrap;
+}
+.pagess:hover {
+  color: #fff;
+}
+.headerImg {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+}
+.headerImg a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: translateY(-5px);
+  position: relative;
+}
+.headerImg img {
+  height: 100%;
+  transform: scale(1);
+  transition: 0.5s;
+}
+#app {
+  background-color: #1c1c1c;
+  height: 100vh;
+}
+.headerImg img:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  filter: brightness(150%);
+}
+.rightIcon {
+  width: calc(50% - 150px);
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  line-height: 105px;
+  position: relative;
+}
+.aIcon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.aIcon img {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: 0.5s;
+  border-radius: 25px;
+  box-shadow: 0 0 5px #f5c14b;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+.aIcon img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  filter: brightness(110%);
+}
+.langBox {
+  margin: 0;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 999999;
+  box-shadow: 0px 0px 8px #fff;
+}
+.langItem img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.langItem {
+  font-size: 16px;
+  color: #ffdb64;
+  padding: 20px 20px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+.langItem:last-child {
+  font-size: 16px;
+  color: #ffdb64;
+  padding: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.langItem:hover {
+  color: #fff;
+  filter: brightness(120%);
+}
+.langItem:hover img {
+  filter: brightness(150%);
+}
+.noShow {
+  width: 100%;
+  height: 92px;
+  margin: auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.svgIcon {
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  fill: #ffdb64;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.svgIcon:hover {
+  background-color: transparent;
+  fill: #f2f2f2;
+  transform: scale(1.09);
+  transition: 0.5s;
+}
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.noShowBox {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+}
+.noShowIcon {
+  fill: #ffdb64;
+}
+.noShow ul {
+  width: 200px;
+  height: 50px;
+}
+.noShow ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  list-style: none;
+}
+.noShow ul ol {
+  width: 100%;
+  height: 0;
+  transition: all linear 0.5s;
+  overflow: hidden;
+}
+.noShow ul ol li {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+}
+.noShow ul ol li a {
+  color: black;
+  text-decoration: none;
+}
+.game {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+.game img {
+  width: 100%;
+  vertical-align: top;
+}
+.main {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #1c1c1c;
+  background-image: url("../img//indexImg/gameburger-bg.jpg");
+}
+.mainBox {
+  max-width: 1140px;
+  margin: auto;
+}
+.mainTopImg {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mainTopImg img {
+  width: 775px;
+  margin: auto;
+  display: block;
+}
+.mainContent {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@font-face {
+  font-family: "Walter Turncoat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/WalterTurncoat-Regular.woff") format("woff"),
+    url("https://game-burger.net/wp-content/uploads/2023/08/WalterTurncoat-Regular.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/Quicksand-VariableFont_wght.woff") format("woff"),
+    url("https://game-burger.net/wp-content/uploads/2023/07/Quicksand-VariableFont_wght.ttf")
+      format("truetype");
+}
+.mainContent p {
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+}
+.mainTitle p {
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  line-height: 1.4;
+}
+.footerRight a {
+  font-family: "Quicksand", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.mainText {
+  color: #d8ad4d;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  padding: 0 30px;
+  line-height: 1.1;
+}
+.mainTitle {
+  width: 100%;
+  text-align: center;
+}
+.mainTitle p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 29px;
+  line-height: 1.4;
+}
+.listContainer {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.listItem {
+  width: calc(33.333% - 36px);
+  padding: 18px;
+}
+.dashedItem {
+  width: calc(100% - 18px);
+  border: 4px dashed #4e4e4e;
+  border-radius: 25px;
+  padding: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.dashedItem img {
+  width: 101%;
+  vertical-align: bottom;
+  border-radius: 15px;
+}
+.dashedItem a {
+  cursor: pointer;
+}
+.dashedItem img:hover {
+  filter: brightness(120%);
+}
+.gameInfoPlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.gameInfoPlayBox {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+}
+.dashedItem:hover .gameInfoPlay {
+  display: block !important;
+}
+.dashedItem:hover .gameInfoPlayBox {
+  display: block !important;
+}
+.infoTitleGame {
+  font-weight: 700;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 10px #000000;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+}
+.infoBtn {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+  padding: 15px 18px;
+  background-color: #ff8200;
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+.gameBtn {
+  background-color: #000;
+  color: #fff;
+}
+.infoBtn:hover {
+  filter: brightness(120%);
+  color: #fff;
+}
+.gameInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.gameInfo .info {
+  width: calc(25% - 40px);
+  padding: 20px;
+  text-align: center;
+}
+.infoTop {
+  width: 60%;
+  margin: auto;
+}
+.infoTop img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.infoTitle {
+  color: #d8ad4d;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  min-height: 100px;
+  line-height: 1.1;
+}
+.infoContent {
+  font-family: "Quicksand", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.slotsWise {
+  width: calc(80% - 160px);
+  margin: auto;
+  padding: 22px 80px;
+}
+.slotsWiseDshed {
+  border: 3px dashed #575555;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+.slotsWiseDshed img {
+  vertical-align: top;
+  width: 100%;
+  transform: scale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.slotsWiseDshed img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.slotsWiseDshed .hrefBtn {
+  font-family: "Walter Turncoat", Sans-serif;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  color: #cecece;
+  font-size: 28px;
+  cursor: pointer;
+}
+.slotsWiseDshed .hrefBtn:hover {
+  color: #ffdb64;
+}
+.slotsWiseDshed .bottom {
+  font-family: "Quicksand", Sans-serif;
+  width: 300px;
+  text-align: center;
+  background-color: #c62627;
+  padding: 10px;
+  font-size: 28px;
+  display: block;
+  margin: 0 auto 10px;
+  color: #ffdb64;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.footer {
+  width: 100%;
+  transform: rotate(180deg);
+  fill: #c62627;
+  vertical-align: bottom;
+  margin-top: 60px;
+}
+.footer img {
+  width: 100%;
+  vertical-align: bottom;
+  transform: translateY(-2px);
+}
+.footer svg {
+  transform: translateY(-4px);
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 347px;
+  vertical-align: top;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #c62627 54%, #e45209 100%);
+}
+.footersBtn {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: linear-gradient(180deg, #c62627 54%, #e45209 100%);
+}
+.footerCon {
+  width: calc(100% - 20px);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.footerCon img {
+  width: 140px;
+  text-align: left;
+}
+.footerCon .con {
+  text-align: left;
+  font-size: 13px;
+  color: #e0a063;
+}
+.footerLeft {
+  width: 33.333%;
+  height: calc(100% - 140px);
+  text-align: left;
+  padding-top: 140px;
+}
+.footerLeft img {
+  width: 168px;
+  padding-left: 20px;
+}
+.footerLeft p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e0a063;
+  width: calc(100% - 20px);
+  padding-left: 20px;
+}
+.footerZh {
+  width: 33.333%;
+  height: 100%;
+}
+.footerZhBox {
+  padding-top: 140px;
+}
+.footerZhBox .img1 {
+  width: 60px;
+  vertical-align: middle;
+}
+.footerZhBox .img2 {
+  width: 120px;
+  vertical-align: middle;
+}
+.footerZhBox .img3 {
+  width: 210px;
+  vertical-align: middle;
+}
+.footerRight {
+  width: 33.333%;
+  height: calc(100% - 160px);
+  padding-top: 160px;
+}
+.footerRight a {
+  display: block;
+  color: #f5c14b;
+  font-weight: 400;
+  font-size: 22px;
+  margin-right: 20px;
+  text-align: right;
+}
+video {
+  width: 100%;
+  vertical-align: top;
+}
+.curtain {
+  display: none;
+  position: absolute;
+  top: 92px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  z-index: 2;
+}
+.showCurtain {
+  display: block;
+}
+.curtain .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  background-color: #c62628;
+  z-index: 99999999;
+}
+.showSelete {
+  transform: translateY(0) !important;
+  transition: transform 0.5s ease-in-out;
+}
+.content-inner {
+  background-color: transparent;
+}
+.content-inner .pagess {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 7px 0;
+}
+.content-inner .pagessAction {
+  background-color: #ad1a1b;
+}
+.ageBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  overflow: hidden;
+}
+.age {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  border-radius: 25px;
+  border: 3px dashed #4e4e4e;
+  transform: translate(-50%, -50%);
+  width: 940px;
+  padding: 60px 40px;
+  margin: auto;
+  background-color: #1c1c1c;
+  background-image: url("../img//indexImg/gameburger-bg.jpg");
+  text-align: center;
+  overflow: hidden;
+}
+.age p {
+  font-family: "Walter Turncoat", Sans-serif;
+  color: #d8ad4d;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.1;
+}
+.age img {
+  width: 90%;
+  margin: 20px auto 30px;
+}
+.age h5 {
+  font-family: "Walter Turncoat", Sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: #cecece;
+  line-height: 1.1;
+}
+.age .btn {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.age .btn .btn1 {
+  display: inline-block;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  fill: #1e1e1e;
+  color: #1e1e1e;
+  background-color: #d8ad4d;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4e4e4e;
+  width: 200px;
+  padding: 20px 10px;
+  transform: scale(1);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.age .btn .btn1:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  filter: brightness(120%);
+  border-radius: 10px;
+}
+.age .btn .btn2 {
+  display: inline-block;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  fill: #fadfdf;
+  color: #fadfdf;
+  background-color: #ad3031;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4e4e4e;
+  width: 200px;
+  padding: 20px 10px;
+  transform: scale(1);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.age .btn .btn2:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  filter: brightness(120%);
+  border-radius: 10px;
+}
+.gamesTop {
+  width: 100%;
+  height: 20px;
+}
+.gameListContainer {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+.aboutListContainer {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+.gameListItem {
+  width: calc(25% - 16px);
+  padding: 8px;
+}
+.aboutListItem {
+  width: calc(25% - 16px);
+  padding: 8px;
+}
+.gameDashedItem {
+  width: calc(100% - 9px);
+  border: 4px dashed #4e4e4e;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.gameDashedItem img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.gameDashedItem img:hover {
+  filter: brightness(120%);
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+.newsBox {
+  width: calc(100% - 100px);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsSlotsWise {
+  width: 66.666%;
+  margin-bottom: 15px;
+}
+.newsSlotsWiseTwo {
+  width: calc(33.333% - 15px);
+  margin-left: 15px;
+}
+.newsSlotsWiseThree {
+  width: calc(33.333% - 7.5px);
+  margin-right: 7.5px;
+}
+.newsSlotsWiseFour {
+  width: calc(33.333% - 7.5px);
+  margin-left: 7.5px;
+}
+.newsSlotsWiseDshed {
+  border: 3px dashed #575555;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+.newsSlotsWiseDshed img {
+  vertical-align: top;
+  width: 100%;
+}
+.newsSlotsWiseDshed .hrefBtn {
+  font-family: "Walter Turncoat", Sans-serif;
+  text-align: left;
+  display: block;
+  margin: 40px auto 20px;
+  color: #cecece;
+  font-size: 22px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+}
+.newsSlotsWiseDshed .hrefBtnOne {
+  font-size: 26px;
+}
+.newsSlotsWiseDshed .hrefBtn:hover {
+  color: #ffdb64;
+}
+.newsSlotsWiseDshed .bottom {
+  font-family: "Quicksand", Sans-serif;
+  width: 120px;
+  text-align: center;
+  background-color: #c62627;
+  padding: 5px;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto 30px;
+  color: #ffdb64;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.aboutBox {
+  width: 100%;
+}
+.aboutBox p {
+  width: calc(100% - 40px);
+  padding: 0 20px 40px;
+  text-align: center;
+  color: #cecece;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.aboutBoxLogo {
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 0 20px;
+}
+.contactBox {
+  width: 100%;
+  margin-top: 60px;
+}
+.contactBox p {
+  width: calc(100% - 40px);
+  padding: 0 20px 40px;
+  text-align: center;
+  color: #cecece;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.contactFrom {
+  width: calc(100% - 140px);
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.myForm {
+  width: 100%;
+  overflow: hidden;
+}
+.myForm p {
+  color: #d63637;
+  font-size: 16px;
+  margin: 0;
+}
+.infoBtnP {
+  position: fixed;
+  top: 1000000;
+  left: 100000;
+}
+.myForm input {
+  width: calc(100% - 20px);
+  height: 50px;
+  line-height: 50px;
+  font-size: 19px;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+  border: 0;
+  margin-top: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.form-control {
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+}
+.myForm h6 {
+  font-size: 14px;
+  color: #d63637;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.myForm svg {
+  vertical-align: text-bottom;
+  transform: translateY(-2px);
+}
+.myFormTitle {
+  width: 100%;
+  text-align: center;
+  font-family: "Walter Turncoat", Sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #f5c14b;
+  margin: 50px 0;
+}
+.nameText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nameText .isInput {
+  width: 49.5%;
+}
+.nameText input {
+  width: calc(100% - 20px);
+  height: 50px;
+  line-height: 50px;
+  font-size: 19px;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+  border: 0;
+  margin-top: 20px;
+}
+.myFormBunch {
+  width: 100%;
+  text-align: left;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.myFormHave {
+  width: 100%;
+  text-align: left;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 22px;
+  color: #c3c0c0;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.contactSubmit {
+  width: 120px !important;
+  color: #222 !important;
+  background-color: #f5c14b !important;
+  font-family: "Quicksand", Sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  height: 40px !important;
+  line-height: 40px !important;
+  border-radius: 25px !important;
+  border: 0;
+  cursor: pointer;
+  margin-left: 50%;
+  margin-top: 20px;
+  color: #fff;
+  transform: translateX(-50%);
+}
+.contactSubmit:hover {
+  filter: brightness(110%);
+}
+.submitEmail {
+  text-align: center;
+  margin: 30px 0;
+  width: calc(100% - 20px);
+  padding: 0 10px;
+}
+.submitEmail img {
+  vertical-align: middle;
+  width: 42px;
+}
+.submitEmail a {
+  color: #fff;
+  font-size: 20px;
+}
+.submitEmail a:hover {
+  color: #f5c14b;
+}
+.qualityContent {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#qrcode {
+  width: 127px;
+  height: 128px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+  background-color: #fff;
+  margin: auto;
+}
+#qrcode::after {
+  content: url("../img/indexImg/s.svg");
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  bottom: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 25px;
+  transform: translate(-50%, 50%);
+}
+#qrcode1 {
+  width: 127px;
+  height: 128px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+  background-color: #fff;
+  margin: auto;
+}
+#qrcode1::after {
+  content: url("../img/indexImg/aircraft.svg");
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 25px;
+  transform: translate(-50%, 50%);
+}
+.qr {
+  display: flex;
+  justify-content: center;
+}
+.qrBox {
+  padding: 30px 10px 10px;
+}
+.qrBox img {
+  border-radius: 10px;
+}
+.qrBox span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+.loadImg {
+  display: none;
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.message {
+  display: none;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5c14b;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 1000;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.aboutDashedItem {
+  width: calc(100% - 29px);
+  border: 4px dashed #4e4e4e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding: 70px 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #1c1c1c;
+}
+.aboutDashedItem img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.aboutDashedItem img:hover {
+  filter: brightness(150%);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.dashedBox {
+  padding: 85px 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4e4e4e 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, #4e4e4e 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, #4e4e4e 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, #4e4e4e 50%, transparent 0) repeat-y;
+  background-size: 12px 4px, 12px 4px, 4px 12px, 4px 12px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+}
+.dashedBox:hover {
+  animation: linearGradientMove 0.3s infinite linear;
+}
+.loadjz {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 700;
+}
+.loadjz img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+@keyframes linearGradientMove {
+  100% {
+    background-position: 12px 0, -12px 100%, 0 -12px, 100% 12px;
+  }
+}
+.dashedBox img {
+  display: block;
+  width: calc(100% - 20px);
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.5s;
+  margin: auto;
+}
+.dashedBox img:hover {
+  filter: brightness(150%);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.anchorBtn {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: none;
+  background-image: url("../img/indexImg/goTop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#closeGameBox {
+  display: block;
+  padding: 13.5% 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  z-index: 2;
+}
+#closeGameBox img {
+  width: 60%;
+  margin: auto;
+  vertical-align: top;
+}
+.slotsWisek {
+  width: 100%;
+  height: 140px;
+}
+@media (min-width: 1170px) and (max-width: 1349px) {
+  html,
+  body {
+    width: 100%;
+    font-size: 31px !important;
+  }
+  .header-one {
+    width: 100%;
+    height: 105px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 105px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1169px) {
+  html,
+  body {
+    width: 100%;
+    font-size: 31px !important;
+  }
+  .gameInfo .info {
+    width: calc(50% - 40px);
+    padding: 20px;
+    text-align: center;
+  }
+  .navbarShow {
+    display: block;
+  }
+  .noShow {
+    display: none;
+  }
+  .header-one {
+    width: 100%;
+    height: 105px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 105px;
+  }
+  .mainText {
+    font-size: 50px;
+  }
+  .age {
+    width: calc(100% - 180px);
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html,
+  body {
+    font-size: 31px !important;
+    width: 100%;
+  }
+  .infoTitleGame {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  .infoBtn {
+    width: 90%;
+    font-size: 22px;
+    padding: 10px 8px;
+  }
+  .age {
+    width: calc(100% - 180px);
+    margin: auto;
+  }
+  .age p {
+    font-size: 47px;
+  }
+  .age h5 {
+    font-size: 30px;
+  }
+  .navbarShow {
+    display: none;
+  }
+  .noShow {
+    display: block;
+  }
+  .header-one {
+    width: 100%;
+    height: 92px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 92px;
+  }
+  .rightIcon {
+    line-height: 92px;
+  }
+  .mainTopImg img {
+    width: 100%;
+  }
+  .mainText {
+    font-size: 50px;
+  }
+  .mainTitle p {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  .dashedItem {
+    padding: 7px;
+  }
+  .gameInfo .info {
+    width: calc(50% - 40px);
+    padding: 20px;
+    text-align: center;
+  }
+  .slotsWise {
+    width: calc(100% - 120px);
+    padding: 60px;
+    display: none;
+  }
+  .navbar {
+    width: calc(50% - 71px);
+  }
+
+  .headerImg img {
+    height: 100%;
+  }
+  .rightIcon {
+    width: calc(50% - 71px);
+  }
+  .gameListItem {
+    width: calc(33.333% - 16px);
+    padding: 8px;
+  }
+  .aboutListItem {
+    width: calc(33.333% - 16px);
+    padding: 8px;
+  }
+  .newsBox {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .newsSlotsWise {
+    width: 100%;
+  }
+  .newsSlotsWiseTwo {
+    width: calc(50% - 7.5px);
+    margin: 0;
+    margin-right: 7.5px;
+    margin-bottom: 15px;
+  }
+  .newsSlotsWiseThree {
+    width: calc(50% - 7.5px);
+    margin: 0;
+    margin-left: 7.5px;
+  }
+  .newsSlotsWiseFour {
+    width: calc(50% - 7.5px);
+    margin: 0;
+    margin-right: 7.5px;
+  }
+}
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    font-size: 31px !important;
+  }
+  .infoTitleGame {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .infoBtn {
+    font-size: 20px;
+  }
+  .age {
+    width: calc(100% - 180px);
+    margin: auto;
+  }
+  .age p {
+    font-size: 40px;
+  }
+  .age h5 {
+    font-size: 28px;
+  }
+  .age .btn .btn1 {
+    font-size: 18px;
+  }
+  .age .btn .btn2 {
+    font-size: 18px;
+  }
+  .navbarShow {
+    display: none;
+  }
+  .noShow {
+    display: block;
+  }
+  .headerImg img {
+    height: 100%;
+  }
+  .header-one {
+    width: 100%;
+    height: 83px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 83px;
+  }
+  .rightIcon {
+    line-height: 83px;
+  }
+  .noShowBox {
+    top: 40%;
+  }
+  .curtain {
+    top: 80px;
+  }
+  .mainTopImg img {
+    width: 100%;
+  }
+  .mainText {
+    font-size: 32px;
+  }
+  .mainTitle p {
+    font-size: 23px;
+    line-height: 1.4;
+  }
+  .dashedItem {
+    padding: 6px;
+  }
+  .gameInfo .info {
+    width: calc(50% - 40px);
+    padding: 20px;
+    text-align: center;
+  }
+  .slotsWise {
+    width: calc(100% - 100px);
+    padding: 50px;
+  }
+  .footerLeft {
+    width: 100%;
+  }
+  .footerZh {
+    width: 100%;
+  }
+  .footerRight {
+    width: 100%;
+  }
+  .navbar {
+    width: calc(50% - 71px);
+  }
+  .rightIcon {
+    width: calc(50% - 71px);
+  }
+  .gameListItem {
+    width: calc(50% - 16px);
+    padding: 8px;
+  }
+  .aboutListItem {
+    width: calc(50% - 16px);
+    padding: 8px;
+  }
+  .newsBox {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .newsSlotsWise {
+    width: 100%;
+  }
+  .newsSlotsWiseTwo {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .newsSlotsWiseThree {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .newsSlotsWiseFour {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .contactFrom {
+    width: calc(100% - 140px);
+  }
+  .nameText {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nameText input {
+    width: calc(100% - 20px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 19px;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 700;
+    border: 0;
+    margin-top: 20px;
+  }
+  .nameText .isInput {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    font-size: 20px !important;
+  }
+  .infoTitleGame {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .aIcon img {
+    width: 30px;
+  }
+  .infoBtn {
+    width: 90%;
+    font-size: 18px;
+    padding: 8px 8px;
+  }
+  .age {
+    width: calc(100% - 180px);
+    margin: auto;
+  }
+  .age p {
+    font-size: 35px;
+  }
+  .age h5 {
+    font-size: 22px;
+  }
+  .age .btn .btn1 {
+    font-size: 15px;
+  }
+  .age .btn .btn2 {
+    font-size: 15px;
+  }
+  .navbarShow {
+    display: none;
+  }
+  .noShow {
+    display: block;
+  }
+  .headerImg img {
+    height: 80%;
+    margin-top: 5%;
+  }
+  .slotsWiseDshed .bottom {
+    font-size: 24px;
+  }
+  .header-one {
+    width: 100%;
+    height: 80px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 80px;
+  }
+  .rightIcon {
+    line-height: 80px;
+  }
+  .noShowBox {
+    top: 40%;
+  }
+  .mainTopImg img {
+    width: 100%;
+  }
+  .mainText {
+    font-size: 25px;
+  }
+  .mainTitle p {
+    font-size: 23px;
+    line-height: 1.4;
+  }
+  .dashedItem {
+    padding: 5px;
+  }
+  .gameInfo .info {
+    width: calc(100% - 40px);
+    padding: 20px;
+    text-align: center;
+  }
+  .slotsWise {
+    width: calc(100% - 60px);
+    padding: 30px;
+  }
+  .footerLeft {
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .footerZh {
+    width: 100%;
+    height: 115px;
+    padding-top: 0;
+    text-align: center;
+  }
+  .footerRight {
+    width: 100%;
+    height: 88px;
+    padding-top: 0;
+    text-align: center;
+  }
+  .footerZhBox {
+    padding-top: 0px;
+  }
+  .footerRight a {
+    text-align: center;
+    font-size: 22px;
+  }
+  .navbar {
+    width: calc(50% - 71px);
+  }
+  .rightIcon {
+    width: calc(50% - 71px);
+  }
+  .gameListItem {
+    width: calc(50% - 16px);
+    padding: 8px;
+  }
+  .aboutListItem {
+    width: calc(50% - 16px);
+    padding: 8px;
+  }
+  .nameText {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nameText input {
+    width: calc(100% - 20px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 19px;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 700;
+    border: 0;
+    margin-top: 20px;
+  }
+  .nameText .isInput {
+    width: 100%;
+  }
+  .myForm select {
+    width: 100%;
+    font-size: 19px;
+  }
+  .myForm input {
+    font-size: 19px;
+  }
+  .myForm label {
+    font-size: 20px;
+  }
+  .listItem {
+    width: calc(50% - 30px);
+    padding: 15px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    font-size: 12px !important;
+  }
+  .swiper-button-next {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-next:after {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-prev:after {
+    --swiper-navigation-size: 20px;
+  }
+  .anchorBtn {
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .loadjz {
+    font-size: 18px;
+  }
+  .loadjz img {
+    width: 40px;
+    margin-bottom: 0;
+  }
+  .slotsWiseDshed .bottom {
+    font-size: 20px;
+    width: 220px;
+  }
+  .dashedBox {
+    padding: 60px 10px;
+  }
+  .navbarShow {
+    display: none;
+  }
+  .aIcon img {
+    width: 30px;
+  }
+  .age {
+    width: calc(100% - 100px);
+    padding: 20px;
+    margin: auto;
+  }
+  .age p {
+    font-size: 30px;
+  }
+  .age h5 {
+    font-size: 18px;
+  }
+  .age .btn .btn1 {
+    font-size: 16px;
+  }
+  .age .btn .btn2 {
+    font-size: 16px;
+  }
+  .noShow {
+    display: block;
+  }
+  .headerImg img {
+    height: 70%;
+    margin-top: 8%;
+  }
+  .header-one {
+    width: 100%;
+    height: 80px;
+  }
+  .headerTop {
+    width: 100%;
+    height: 80px;
+  }
+  .rightIcon {
+    line-height: 80px;
+  }
+  .noShowBox {
+    top: 40%;
+  }
+  .form-control {
+    font-size: 18px;
+  }
+  .mainTopImg img {
+    width: 100%;
+  }
+  .mainText {
+    font-size: 25px;
+  }
+  .mainTitle p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .dashedItem {
+    padding: 0px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+  }
+  .gameInfo .info {
+    width: calc(100% - 40px);
+    padding: 20px;
+    text-align: center;
+  }
+  .slotsWise {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .footerLeft {
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .footerLeft img {
+    padding-left: 0;
+  }
+  .footerLeft p {
+    width: 100%;
+    padding-left: 0;
+  }
+  .footerZh {
+    width: 100%;
+    height: 115px;
+    padding-top: 0;
+    text-align: center;
+  }
+  .footerRight {
+    width: 100%;
+    height: 88px;
+    padding-top: 0;
+    text-align: center;
+  }
+  .footerZhBox {
+    padding-top: 0px;
+  }
+  .footerRight a {
+    text-align: center;
+    font-size: 22px;
+    margin-right: 0;
+  }
+  .navbar {
+    width: 35%;
+  }
+  .rightIcon {
+    width: 35%;
+  }
+  .nameText {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nameText input {
+    width: calc(100% - 20px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 700;
+    border: 0;
+    margin-top: 20px;
+  }
+  .nameText .isInput {
+    width: 100% !important;
+  }
+  .myForm input {
+    font-size: 18px;
+  }
+  .myForm select {
+    width: 100%;
+    font-size: 18px;
+  }
+  .contactFrom {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+  .myForm label {
+    font-size: 18px;
+  }
+  .listItem {
+    width: calc(50% - 2px);
+    padding: 1px;
+    margin-bottom: 5px;
+  }
+  .listContainer {
+    width: calc(100% - 30px);
+    padding: 40px 15px;
+  }
+  .infoTitleGame {
+    white-space: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .infoBtn {
+    padding: 8px 6px;
+    font-size: 14px;
+    width: 95%;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 375px) {
+  .gameListItem {
+    width: 100%;
+  }
+  .swiper-button-next {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-next:after {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+  }
+  .swiper-button-prev:after {
+    --swiper-navigation-size: 20px;
+  }
+  .loadjz {
+    font-size: 18px;
+  }
+  .loadjz img {
+    width: 40px;
+    margin-bottom: 0;
+  }
+  .slotsWiseDshed .bottom {
+    font-size: 18px;
+    width: 220px;
+  }
+  .anchorBtn {
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .aboutListItem {
+    width: 100%;
+  }
+  .aIcon img {
+    width: 30px;
+  }
+  .nameText {
+    width: 100%;
+    flex-direction: column;
+  }
+  .form-control {
+    font-size: 18px;
+  }
+  .listItem {
+    width: calc(50% - 2px);
+    padding: 1px;
+    margin-bottom: 5px;
+  }
+  .dashedItem {
+    padding: 0px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+  }
+  .age {
+    width: calc(100% - 100px);
+    padding: 20px;
+    margin: auto;
+  }
+  .age p {
+    font-size: 30px;
+  }
+  .age h5 {
+    font-size: 18px;
+  }
+  .age .btn .btn1 {
+    font-size: 16px;
+  }
+  .age .btn .btn2 {
+    font-size: 16px;
+  }
+  .nameText input {
+    width: calc(100% - 20px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 700;
+    border: 0;
+    margin-top: 20px;
+  }
+  .nameText .isInput {
+    width: 100%;
+  }
+  .myForm select {
+    width: 100%;
+    font-size: 15px;
+  }
+  .myForm label {
+    font-size: 15px;
+  }
+  .myForm input {
+    font-size: 15px;
+  }
+  .infoTitleGame {
+    white-space: normal;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .infoBtn {
+    padding: 8px 2px;
+    font-size: 14px;
+    width: 95%;
+    line-height: 1;
+  }
+}
+@media (max-width: 1200px) {
+  html,
+  body {
+    width: 100% !important;
+  }
+}
